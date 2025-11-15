@@ -1,151 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Snapchat AR Design Case Study — Syeda Zuhaira Afreen</title>
-
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Case Study — Snapchat AR Design | Syeda Zuhaira Afreen</title>
 <style>
-  body {
-    margin: 0;
-    padding: 0;
-    background: #f9fafb;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-    color: #1a1a1a;
-    line-height: 1.65;
+  :root{
+    --accent:#0b67ff;
+    --muted:#666;
+    --maxw:900px;
+    --pad:20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   }
-
-  .container {
-    max-width: 850px;
-    margin: auto;
-    padding: 40px 20px;
-  }
-
-  h1 {
-    font-size: 32px;
-    font-weight: 800;
-    margin-bottom: 10px;
-  }
-
-  h2 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 35px;
-    color: #0b67ff;
-  }
-
-  p {
-    font-size: 16px;
-    margin: 10px 0;
-  }
-
-  .section {
-    background: white;
-    padding: 24px;
-    border-radius: 12px;
-    margin-top: 24px;
-    border: 1px solid #ececec;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-  }
-
-  .tag {
-    display: inline-block;
-    padding: 6px 12px;
-    background: #e9f1ff;
-    color: #0b67ff;
-    font-size: 13px;
-    border-radius: 8px;
-    margin-right: 6px;
-  }
-
-  .header-meta {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-
-  .skills {
-    margin-top: 12px;
-  }
-
-  a.button {
-    display: inline-block;
-    background: #0b67ff;
-    padding: 10px 16px;
-    color: white;
-    border-radius: 8px;
-    margin-top: 12px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-
+  body{margin:0;background:#FAFAFB;color:#111;line-height:1.45}
+  .wrap{max-width:var(--maxw);margin:32px auto;padding:var(--pad);}
+  header{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .title{font-size:20px;font-weight:700}
+  .meta{color:var(--muted);font-size:14px}
+  .links a{color:var(--accent);text-decoration:none;margin-left:12px;font-weight:600}
+  .hero{margin-top:18px;padding:18px;border-radius:10px;background:#fff;border:1px solid #eee;box-shadow:0 6px 18px rgba(15,15,20,0.03)}
+  h2{font-size:16px;margin:16px 0 8px}
+  p{margin:8px 0}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .card{background:#fff;border:1px solid #eee;padding:12px;border-radius:8px}
+  .cta{margin-top:16px}
+  a.button{display:inline-block;background:var(--accent);color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;font-weight:600}
+  .small{font-size:13px;color:var(--muted)}
+  ul{margin:8px 0 0 18px}
+  .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .tag{background:#F2F8FF;color:var(--accent);padding:6px 8px;border-radius:6px;font-size:13px;font-weight:600}
+  footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+  @media(max-width:720px){.two{grid-template-columns:1fr}header{align-items:flex-start}}
 </style>
 </head>
-
 <body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="title">Case Study — Snapchat AR Design</div>
+        <div class="meta">Syeda Zuhaira Afreen • AR/UX Intern • Nov 2023 – Apr 2024</div>
+      </div>
+      <div class="links">
+        <span class="small">Contact:</span>
+        <a href="mailto:syedazuhairaafreen@gmail.com" class="small">syedazuhairaafreen@gmail.com</a>
+        <a href="https://www.linkedin.com/in/syeda-zuhaira-afreen-380b93267" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/schrodingerskittycat" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </header>
 
-<div class="container">
+    <section class="hero">
+      <h2>Project summary</h2>
+      <p>
+        I designed and shipped interactive AR lenses in Lens Studio with the goal of improving engagement and completion
+        for Gen Z users. The work combined trend research, quick prototyping, and iterative testing to create playful,
+        shareable experiences that aligned with platform goals.
+      </p>
 
-  <h1>Snapchat AR Design Case Study</h1>
-  <div class="header-meta">
-    By <b>Syeda Zuhaira Afreen</b> • AR/UX Intern • Nov 2023 – Apr 2024
+      <div class="two" style="margin-top:12px">
+        <div class="card">
+          <h3>Problem</h3>
+          <p>
+            Certain lenses were seeing drop-offs in interaction and low completion rates. The challenge was to design
+            lenses that felt instantly understandable, visually current, and shareable for Gen Z.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>My role</h3>
+          <p class="small">AR/UX intern — responsible for research, prototyping in Lens Studio, visual design, and cross-team collaboration.</p>
+          <div class="skills" style="margin-top:10px">
+            <span class="tag">Lens Studio</span>
+            <span class="tag">UX Thinking</span>
+            <span class="tag">User Research</span>
+            <span class="tag">Prototyping</span>
+            <span class="tag">Visual Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>Research & insights</h2>
+      <p>
+        I analyzed top-performing lenses, tracked engagement drop-off points, and studied Gen Z visual trends and interaction
+        patterns. Key insights: users prefer quick, clear interactions; bold, transformative visuals increase completion;
+        audio-reactive and motion-triggered effects boost shareability.
+      </p>
+
+      <h2>Ideation & prototyping</h2>
+      <p>
+        I sketched multiple concepts (transformations, motion triggers, social hooks), built quick Lens Studio prototypes,
+        and ran small informal tests to evaluate which interactions felt intuitive and rewarding.
+      </p>
+
+      <h2>Solution</h2>
+      <p>
+        The final lens combined trend-forward visuals, clear trigger points, and concise feedback loops so users always
+        knew how to interact. Animations were tuned for instant satisfaction and social sharing.
+      </p>
+
+      <h2>Impact</h2>
+      <p>
+        Post-launch dashboards and internal feedback showed improved interaction depth and more frequent shares. The experience
+        aligned with product goals and gave actionable learnings for future AR features.
+      </p>
+
+      <h2>Reflection</h2>
+      <p>
+        I learned how small visual decisions shape behaviour, how to balance creativity with product constraints, and how to
+        communicate effectively with cross-functional teammates to ship polished AR experiences.
+      </p>
+
+      <div class="cta">
+        <a class="button" href="#" id="view-pdf">View full case study (PDF)</a>
+        <span class="small" style="margin-left:12px">• Replace the "View full case study" link with your hosted PDF or portfolio URL.</span>
+      </div>
+    </section>
+
+    <footer>
+      Made by Syeda Zuhaira Afreen — <span class="small">Lens Studio • UX • Product Design</span>
+    </footer>
   </div>
 
-  <div class="section">
-    <h2>Overview</h2>
-    <p>
-      As an AR/UX intern at Snapchat, I designed interactive AR experiences focused on engagement, shareability, and Gen Z behavior patterns. My responsibility was to research trends, build prototypes in Lens Studio, and ship lenses that improved completion rates and user interaction quality.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Problem</h2>
-    <p>
-      Existing lenses showed declining completion rates and drop-offs in interaction. Gen Z users expect instant clarity, bold visuals, and high shareability. The challenge was to design an AR experience that felt intuitive within seconds.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Research Insights</h2>
-    <p><b>Methods used:</b> Lens performance dashboards, trend analysis, Gen Z behavior research, quick user tests.</p>
-    <p><b>Key findings:</b></p>
-    <ul>
-      <li>Bold, transformative visuals lead to higher completion rates.</li>
-      <li>Motion-triggered actions improve average interaction depth.</li>
-      <li>Gen Z responds strongly to shareable, playful effects.</li>
-      <li>Clarity in the first 2 seconds determines whether users stay.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Solution</h2>
-    <p>
-      I built AR prototypes with trends-informed visuals, clear interactions, and quick gratification loops. The final design included motion-triggered effects, audio-reactive elements, and strong visual identity aligned with Gen Z preferences.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Impact</h2>
-    <p>
-      Internal dashboards showed improvements in interaction depth and share frequency. The lens aligned well with platform objectives and user expectations, and the learnings were used to guide future AR interactions.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Skills Used</h2>
-    <div class="skills">
-      <span class="tag">Lens Studio</span>
-      <span class="tag">UX Thinking</span>
-      <span class="tag">User Research</span>
-      <span class="tag">Prototyping</span>
-      <span class="tag">Visual Design</span>
-      <span class="tag">Product Thinking</span>
-    </div>
-  </div>
-
-  <a class="button" href="snapchat-case-study.pdf">Download Full PDF</a>
-
-</div>
-
+  <script>
+    // optional: replace with actual PDF link when ready
+    document.getElementById('view-pdf').href = "path/to/your/case-study.pdf";
+  </script>
 </body>
 </html>
